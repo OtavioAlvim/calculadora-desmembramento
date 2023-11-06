@@ -1,0 +1,15 @@
+{
+    "name": "otavi/calculadora-desmembramento",
+    "autoload": {
+        "psr-4": {
+            "Otavi\\CalculadoraDesmembramento\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "OtavioAlvim",
+            "email": "otavioola51@gmail.com"
+        }
+    ],
+    "require": {}
+}
