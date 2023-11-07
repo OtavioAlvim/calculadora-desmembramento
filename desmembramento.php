@@ -1,6 +1,6 @@
 <?php 
+require'./verifica_sessao/sessao.php';
 if(!empty($_POST)){
-    var_dump($_POST);
     $pdo2 = new PDO('sqlite:./db/desmembramento.db');
     $nome = $_POST['nome'];
     $peso_produto = $_POST['peso'];

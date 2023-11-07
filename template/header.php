@@ -11,13 +11,10 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            /* background-image: url('../img/fundo.avif'); */
-            /* background-image: url('../img/fundo.png'); */
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            background-size: 100%;
-            background-position: center;
+
+        }
+        a{
+            text-decoration: none;
         }
 
         
@@ -28,6 +25,6 @@
 
     <div class="container">
         <div class="container-fluid">
-            <h2 class="text-center mt-10">GERADOR DE DESMEMBRAMENTO </h2>
+            <h2 class="text-center mt-10">GERADOR DE DESMEMBRAMENTO <a href="./verifica_sessao/logout.php">SAIR</a></h2>
             <hr>
         </div>

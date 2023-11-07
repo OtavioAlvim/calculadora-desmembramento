@@ -15,7 +15,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
-        <a type="button" class="btn btn-primary" href="../index.php"> CANCELAR FORMULA</a>
+        <a type="button" class="btn btn-primary" href="./utilitarios/cancela.php"> CANCELAR FORMULA</a>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
-        <button type="button" class="btn btn-primary">EXPORTAR</button>
+        <a type="button" class="btn btn-primary" href="./relatorio.php">EXPORTAR</a>
       </div>
     </div>
   </div>
@@ -55,11 +55,13 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
-        <a type="button" class="btn btn-primary" href="../utilitarios/calcular.php">CALCULAR</a>
+        <a type="button" class="btn btn-primary" href="./utilitarios/calcular.php">CALCULAR</a>
       </div>
     </div>
   </div>
 </div>
+
+
 
 
 </body>
