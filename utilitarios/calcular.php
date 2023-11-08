@@ -40,7 +40,7 @@ $produtoss = $sqll->fetchAll(PDO::FETCH_ASSOC);
 
 
 foreach($produtoss as $produtoss){
-    $valor_custo = $produtoss['porcentagem_quantidade'] + $perda_dividida * 100 / $custo_total;
+    $valor_custo = ($produtoss['quantidade'] + $perda_dividida)  * 100 / $peso_total;
     $sqlll = "update itens_desmembramento set porcentagem_custo =:valor where id=:id_produto";
     $sqlll = $pdo2->prepare($sqlll);
     $sqlll->bindValue(':valor',$valor_custo);
