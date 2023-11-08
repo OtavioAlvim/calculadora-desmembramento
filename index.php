@@ -31,7 +31,7 @@
             <div class="d-flex justify-content-center align-items-center" style="height: 100vh; width: 100vw; position: fixed; top: 0; left: 0; z-index: 999;">
 
                 <img src="./img/fundo2.png" alt="Carregando..." style="max-width: 1000px; "><br>
-                <h4 class="text-center">CLIQUE NA TELA PARA INICIAR!</h4>
+                <h4 class="text-center">CLIQUE NA TELA PARA INICIAR UMA FORMULA!</h4>
             </div>
         </div>
     </a>

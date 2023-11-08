@@ -5,7 +5,6 @@ $sql = $pdo2->prepare($sql);
 $sql->bindValue(':sessao',$_SESSION['id']);
 $sql->execute();
 $dados = $sql->fetchAll(PDO::FETCH_ASSOC);
-
 if (empty($dados)) { ?>
     <form class="row g-3" action="" method="post">
         <div class="col-md-5">
