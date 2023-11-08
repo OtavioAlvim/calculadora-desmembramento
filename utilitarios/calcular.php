@@ -13,7 +13,7 @@ $peso_total = $peso[0]['peso_total'];
 $contagem_registro = $peso[0]['total_registros'];
 $perda = $peso_total - $peso_item;
 $custo_total = $peso[0]['custo_total'];
-$perda_dividida = round($perda / $contagem_registro,2);
+$perda_dividida = $perda / $contagem_registro;
 
 $sqll = "SELECT itens_desmembramento.* FROM desmembramento LEFT JOIN itens_desmembramento on desmembramento.id_formula = itens_desmembramento.id_desmembramento where desmembramento.status = 'A' and sessao =:sessao";
 $sqll = $pdo2->prepare($sqll);
@@ -59,7 +59,7 @@ $produtos = $sqll->fetchAll(PDO::FETCH_ASSOC);
 $perda_porcentagem = $sqll->fetchAll(PDO::FETCH_ASSOC);
 
 $valor_perda = round($perda * 100 / $peso_total,2);
-$sql2 = "update desmembramento set perda =:perda where sessao = :sessao";
+$sql2 = "update desmembramento set perda =:perda where sessao = :sessao and status = 'A'";
 $sql2 = $pdo2->prepare($sql2);
 $sql2->bindValue(':sessao',$_SESSION['id']);
 $sql2->bindValue(':perda',$valor_perda);
