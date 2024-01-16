@@ -43,7 +43,7 @@ $dados = $sql->fetchAll(PDO::FETCH_ASSOC);
     </div>
     <div class="col-md-3">
         <label for="inputPassword4" class="form-label">PESO PRODUTO EM KG</label>
-        <input type="number" step="0.01" class="form-control" id="inputPassword4" placeholder="PESO TOTAL ITEM" name="peso" required>
+        <input type="number" step="0.0001" class="form-control" id="inputPassword4" placeholder="PESO TOTAL ITEM" name="peso" required>
     </div>
     <div class="col-md-1">
         <input type="hidden" name="id" value="<?php echo  $dados[0]['id_formula'] ?>">

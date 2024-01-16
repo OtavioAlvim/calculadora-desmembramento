@@ -35,7 +35,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
-        <a type="button" class="btn btn-primary" href="./relatorio.php">EXPORTAR</a>
+        <a type="button" class="btn btn-primary" href="./utilitarios/gerar_pdf.php">EXPORTAR</a>
       </div>
     </div>
   </div>
